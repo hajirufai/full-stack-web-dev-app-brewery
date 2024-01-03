@@ -15,7 +15,41 @@ TODO: Change the background color for each device
   <title>Media Query</title>
   <style>
     body {
-      background-color: aquamarine;
+        background-color: white;
+      }
+
+    @media (min-width: 319px) and (max-width: 480px) {
+
+      /* Mobile Devices: 319px — 480px */
+      body {
+        background-color: red;
+      }
+    }
+
+    @media (min-width: 481px) and (max-width: 1200px) {
+
+      /* Pads and Tablets: 481px — 1200px */
+      body {
+        background-color: yellow;
+      }
+
+    }
+
+    @media (min-width: 1201px) and (max-width: 1600px) {
+
+      /* Laptops: 1201px — 1600px */
+      body {
+        background-color: green;
+      }
+
+    }
+
+    @media (min-width: 1601px) {
+
+      /* Desktops: 1601px and more */
+      body {
+        background-color: blue;
+      }
     }
   </style>
 </head>
