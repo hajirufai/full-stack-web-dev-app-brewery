@@ -34,29 +34,25 @@
     .cowboy {
       /* grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end; */
       background-color: #00B9FF;
-      grid-column-start: 1;
+      /* grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 1;
-      grid-row-end: 2;
+      grid-row-end: 2; */
+      /* grid-area: 1 / 1 / 3 / 3 */
+      grid-column: span 2;
     }
 
     .astronaut {
       /* grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end; */
       background-color: #03989E;
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 2;
-      grid-row-end: 3;
+      order: 1;
+      grid-column: span 2;
     }
 
     .book {
       /* grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end; */
       background-color: #E58331;
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 2;
-      grid-row-end: 4;
-
+      grid-row: span 2;
 
       /* TODO: Make the book div look like 
       the goal3 image using grid-row. */
