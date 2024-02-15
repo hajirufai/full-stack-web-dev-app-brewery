@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.blue {
+  background-color: blue;
+  height: 100px;
+  width: 100%;
+}
+
+.red {
+  background-color: red;
+  height: 200px;
+  width: 25%;
+  float: left;
+}
+
+.grey {
+  background-color: grey;
+  height: 200px;
+  width: 25%;
+  float: left;
+}
+
+.purple {
+  background-color: purple;
+  height: 100px;
+  width: 33.33%;
+  float: left;
+  border: 5px solid yellow;
+}
+
+.pink {
+  background-color: pink;
+  height: 100px;
+  width: 100%;
+  clear: both;
+}
+
+.yellow {
+  border: 10px solid yellow;
+  height: 210px;
+  width: 50%;
+  float: left;
+}
