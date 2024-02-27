@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Alignment Examples</title>
+    <style>
+        /* Method 1: Using line-height */
+        .container-line-height {
+            height: 200px; /* Example height */
+            line-height: 200px; /* Vertical alignment */
+            border: 1px solid #ccc; /* Just for visualization */
+            margin-bottom: 10px;
+        }
+
+        /* Method 2: Using flexbox */
+        .container-flexbox {
+            display: flex;
+            align-items: center; /* Vertical alignment */
+            justify-content: center; /* Horizontal alignment */
+            height: 200px; /* Example height */
+            border: 1px solid #ccc; /* Just for visualization */
+            margin-bottom: 10px;
+        }
+
+        /* Method 3: Using CSS Grid */
+        .container-grid {
+            display: grid;
+            place-items: center; /* Center both horizontally and vertically */
+            height: 200px; /* Example height */
+            border: 1px solid #ccc; /* Just for visualization */
+            margin-bottom: 10px;
+        }
+
+        /* Method 4: Using vertical-align property */
+        .container-vertical-align {
+            height: 200px; /* Example height */
+            border: 1px solid #ccc; /* Just for visualization */
+            margin-bottom: 10px;
+        }
+
+        .text-vertical-align {
+            display: inline-block;
+            vertical-align: middle; /* Vertical alignment */
+        }
+
+        /* Method 5: Using position and top */
+        .container-position-top {
+            position: relative; /* or absolute, fixed */
+            height: 200px; /* Example height */
+            border: 1px solid #ccc; /* Just for visualization */
+            margin-bottom: 10px;
+        }
+
+        .text-position-top {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <!-- Method 1: Using line-height -->
+    <div class="container-line-height">
+        <span>This text is vertically aligned using line-height</span>
+    </div>
+
+    <!-- Method 2: Using flexbox -->
+    <div class="container-flexbox">
+        <span>This text is vertically aligned using flexbox</span>
+    </div>
+
+    <!-- Method 3: Using CSS Grid -->
+    <div class="container-grid">
+        <span>This text is vertically aligned using CSS Grid</span>
+    </div>
+
+    <!-- Method 4: Using vertical-align property -->
+    <div class="container-vertical-align">
+        <span class="text-vertical-align">This text is vertically aligned using vertical-align</span>
+    </div>
+
+    <!-- Method 5: Using position and top -->
+    <div class="container-position-top">
+        <span class="text-position-top">This text is vertically aligned using position and top</span>
+    </div>
+</body>
+</html>

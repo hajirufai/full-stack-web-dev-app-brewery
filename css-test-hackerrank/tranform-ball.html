@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ensures the body takes up the full viewport height */
+            margin: 0; /* Removes default body margin */
+        }
+        div {
+            height: 50px;
+            width: 50px;
+            background: #3ba59b;
+            border-radius: 50%;
+        }
+        .greyBall:hover{
+            transform: scale(10);
+            transition: 5000ms;
+        }
+    </style>
+</head>
+<body>
+    <div class="greyBall"></div>
+</body>
+</html>
