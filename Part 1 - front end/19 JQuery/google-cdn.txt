@@ -1,4 +1,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 var web = "https://ajax.googleapis.com/"
 var path = "ajax/libs/jquery/3.7.1/"
 var jquery = "jquery.min.js"
