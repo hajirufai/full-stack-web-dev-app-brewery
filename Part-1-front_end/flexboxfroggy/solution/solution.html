@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collapsible Solution</title>
+  <style>
+    .collapsible {
+      background-color: #f1f1f1;
+      cursor: pointer;
+      padding: 10px;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 16px;
+    }
+
+    .content {
+      display: none;
+      padding: 10px;
+      overflow: hidden;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Solutions</h1>
+<h2>Level 1</h2>
+
+<button class="collapsible" onclick="toggleSolution()">See Solution</button>
+<div class="content">
+  <pre>
+    <code>
+      #pond {
+        display: flex;
+        justify-content: flex-end;
+      }
+    </code>
+  </pre>
+</div>
+
+<script>
+  function toggleSolution() {
+    var content = document.querySelector('.content');
+    if (content.style.display === 'block') {
+      content.style.display = 'none';
+    } else {
+      content.style.display = 'block';
+    }
+  }
+</script>
+
+</body>
+</html>
