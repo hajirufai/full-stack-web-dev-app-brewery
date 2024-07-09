@@ -1,0 +1,6 @@
+{}
+{"type":"education","participants":"1"}
+{"type":"education","participants":"2"}
+{"type":"","participants":""}
+{"type":"","participants":""}
+{}
