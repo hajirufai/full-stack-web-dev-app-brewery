@@ -1,0 +1,30 @@
+// In eg math.js file
+const pi = 3.14159265358979;
+
+function doublePi(){
+    return pi*2;
+}
+
+function triplePi(){
+    return pi*3;
+}
+
+
+export default pi;
+export {doublePi, triplePi};
+
+######################################################################################
+
+// on other file eg index.js , how you import:
+import PI, {doublePi, triplePi} from "./math.js"
+
+The other one s you have to write their specific names as have been defined
+While the default you can import it with your own alias
+
+
+// import everything as an object
+import * as pi from "./math.js"
+
+Accesing
+pi.default
+pi.doublePi()
