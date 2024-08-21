@@ -1,0 +1,24 @@
+A canister is a computational unit on the Internet Computer (a blockchain network created by the DFINITY Foundation). It is essentially a smart contract with additional capabilities. Here’s a breakdown of what a canister is:
+
+Key Characteristics of a Canister:
+Smart Contract: At its core, a canister is a smart contract, meaning it can hold state (data) and execute logic (code).
+
+State and Code: Unlike traditional smart contracts, a canister can store both state (persistent data) and code (the logic that operates on that data). This allows it to perform more complex operations and manage its own data independently.
+
+Interactivity: Canisters can interact with other canisters and users on the Internet Computer. They can send and receive messages, making them highly interactive and capable of building decentralized applications (dApps) that can scale.
+
+Autonomous Execution: Once deployed, a canister runs autonomously. It can process incoming requests, modify its state, and generate responses based on its logic.
+
+Upgradeability: Canisters can be upgraded with new code without losing their state. This is a significant advantage over many other blockchain-based smart contracts, which typically cannot be altered once deployed.
+
+How Does a Canister Work?
+Written in Motoko (or Rust): Canisters are typically written in Motoko, the language developed specifically for the Internet Computer, or in Rust, which is also supported.
+
+Deployed on the Internet Computer: Once written, the canister is compiled and deployed to the Internet Computer, where it can interact with other canisters, users, and external systems.
+
+Autonomous Execution: After deployment, the canister operates autonomously, responding to calls, managing its state, and executing its code as per its design.
+
+Example in Context:
+In your previous code example:
+
+The DBank actor is a canister. When you deploy this actor on the Internet Computer, it becomes a canister that can hold a value (currentValue), process functions (like topUp()), and interact with users or other canisters.

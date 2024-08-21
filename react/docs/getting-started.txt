@@ -1,0 +1,20 @@
+# Getting started with javascript -> Use node,js
+# run js file
+node test.js
+
+# Run node/express app.js
+node index.js
+
+# Advance run express.app to reload everytime when there is changes in js files
+nodemon index.js
+
+# Install node packages
+npm install  # npm i
+
+# Start react app  # to launch your react project in your brows
+npm run dev  # doesnt work in my 308 now so far
+
+# from google net
+npx create-react-app my-app
+cd my-app
+npm start

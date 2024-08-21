@@ -1,0 +1,22 @@
+# Building DApps (Decentralized Applications) for ICP (internet computer)
+# in a mac: https://docs.google.com/document/d/e/2PACX-1vTSgoWcVvuMW4Aa78MyqeK0_ZRl_MaV7rS-tdhya3jlPbSSbxczQFCohrGf87T4F7tJKXwTjT2z_QSq/pub
+
+1. Have LTS node version
+node --version
+
+2. Install dfx
+DFX_VERSION=0.9.3 sh -ci "$(curl -fsSL https://sdk.dfinity.org/install.sh)"
+dfx --version
+
+dfx is a command-line tool developed by DFINITY 
+for creating, deploying, and managing decentralized applications (dapps) 
+on the Internet Computer (ICP). 
+It serves as the primary interface for developers working with smart contracts,
+known as canisters, which are executed in a WebAssembly (Wasm) environment.
+
+3. Install Motoko extension by dfinity on your VScode
+4. Get started with web3 development!
+dfx new Hello && cd Hello
+dfx start
+dfx deploy
+npm start

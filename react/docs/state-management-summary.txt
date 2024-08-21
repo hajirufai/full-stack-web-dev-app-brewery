@@ -1,0 +1,45 @@
+1. Add a state variable
+eg 
+const [isDone, setIsDone] = React.useState(false)
+
+2. Follow it with a function to change the state of the state variable
+eg
+function handleClick() {
+    setIsDone((prevValue) => !prevValue);
+  }
+
+3. Apply conditional rendering in your appropriate element 
+eg
+ <li
+      onClick={handleClick}
+      // Apply conditional rendering based on the state variable
+      style={{ textDecoration: isDone ? "line-through" : "none" }}
+    >
+      {props.text}
+    </li>
+
+
+FULL EXAMPLE:
+import React from "react";
+
+function ToDoItem(props) {
+  // use a state variable
+  const [isDone, setIsDone] = React.useState(false);
+
+  // follow by using a function to change the state of the state variable
+  function handleClick() {
+    setIsDone((prevValue) => !prevValue);
+  }
+
+  return (
+    <li
+      onClick={handleClick}
+      // Apply conditional rendering based on the state variable
+      style={{ textDecoration: isDone ? "line-through" : "none" }}
+    >
+      {props.text}
+    </li>
+  );
+}
+
+export default ToDoItem;
