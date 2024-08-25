@@ -1,6 +1,9 @@
+# Also a package of node \
+# that is used as a tool  to run node.js packages that are not installed globally in your system
+
 npx is a tool that comes with node.js.
 it stands for node package execute
-It is used to run node.js packagesg that are not installed globally in your system
+It is used to run node.js packages that are not installed globally in your system
 eg the create-react-app package
 
 How is it installed?

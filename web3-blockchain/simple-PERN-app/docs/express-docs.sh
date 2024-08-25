@@ -1,4 +1,5 @@
-# firsst of all confirm node and node package manager
+# It is package for node that simplifies backend
+# first of all confirm node and node package manager
 node -v
 npm -v
 

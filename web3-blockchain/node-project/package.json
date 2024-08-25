@@ -1,0 +1,13 @@
+{
+  "name": "node-demo",
+  "version": "1.0.0",
+  "description": "This is simplistic project to how node and environment works\"",
+  "main": "index.js",
+  "scripts": {
+    "go": "echo Hello World",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
