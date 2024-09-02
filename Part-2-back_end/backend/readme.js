@@ -15,7 +15,7 @@
  * sudo lsof -i -P -n | grep LISTEN
  * 
  * How to run express/node application in nodemon
- * nodemon index.js
+ * nodemon index.js  # npm run dev
  * 
  * app.use(express.static("public"))
  * How to make your EJS use the static files by default located in '/public/'

@@ -1,7 +1,7 @@
 # create a new project
 dfx new <project-name> && cd <project-name>
 # start the project
-dfx start
+dfx start  # simulates our internet computer running locally
 # Edit your project, open another shell session and deploy the project to update the changes
 dfx deploy
  
@@ -30,10 +30,6 @@ dfx canister id dbank
 # stable var currentValue: Float = 10.0;  // Make it orthogonal persistence
 
 
-# npm
-npm update 
-npm install --save-dev webpack@latest webpack-cli@latest
-npm run build
-npm start
+
 
 

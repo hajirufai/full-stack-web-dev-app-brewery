@@ -13,9 +13,6 @@ npm init -y  # create a package.json
 npm install
 
 
-# Things I know: What is npm start?
-# npm start looks into the package.json and looks for start in the scripts
-# mainly now practically used in React App
 
 
 

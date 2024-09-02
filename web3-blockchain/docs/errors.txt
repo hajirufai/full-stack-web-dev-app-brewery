@@ -1,0 +1,5 @@
+# No production canister_ids.json found
+npm update 
+npm install --save-dev webpack@latest webpack-cli@latest
+npm run build
+npm start

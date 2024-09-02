@@ -2,5 +2,9 @@
 dfx new project_name
 
 # Dfinity projects run with 2 terminal sessions (preferrable side by side)
-dfx start
+npm install
+dfx start  
 dfx deploy  
+npm start
+
+

@@ -1,0 +1,48 @@
+import Debug "mo:base/Debug";
+import Time "mo:base/Time";
+import Float "mo:base/Float";
+import Text "mo:base/Text";
+import Int "mo:base/Int";
+
+actor DBank {
+
+  var currentValue : Float = 100.0;
+
+  public query func checkBalance() : async Float {
+    return currentValue;
+  };
+
+  public func topUp(amount : Float) {
+    currentValue += amount;
+    Debug.print(debug_show (currentValue));
+  };
+
+  public func withDraw(amount : Float) {
+    if (amount > currentValue) {
+      Debug.print("You have entered a large amount that makes currentValue negative. Try again!");
+    } else {
+      currentValue -= amount;
+      Debug.print(debug_show (currentValue));
+    };
+  };
+
+
+  // // TIMING
+  // var startTime : Int = Time.now(); // time in nanoseconds since epoch time (1970-01-01)
+
+  // public query func printStartTime() : async Text {
+  //   return debug_show(startTime);
+  // };
+
+  // public query func printCurrentTime(): async Text {
+  //   return debug_show(Time.now())
+  // };
+
+  // public func compound(): async Float {
+  //   var n: Float = Float.fromInt(Time.now() - startTime) / 1000000000.0;  // n is timelapsed in seconds
+  //   Debug.print(debug_show (n));  // print time in seconds
+  //   currentValue *= 1.01 ** n;
+  //   return currentValue;
+  // };
+
+};
