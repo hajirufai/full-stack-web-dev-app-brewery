@@ -1,6 +1,6 @@
 'use strict';
-
-const superheroes = require('superheroes');
+import superheroes from "superheroes";
+// const superheroes = require('superheroes');
 // console.log("superheroes.all.length");
 // console.log(superheroes.all.length);
 
