@@ -1,3 +1,8 @@
-.DS_Store
 ShareRide/
 simple-PERN-app/
+mastering-next-js/
+# Ignore node_modules/ at all recursive levels
+**/.DS_Store
+**/node_modules/
+**/package-lock.json
+**/.env
