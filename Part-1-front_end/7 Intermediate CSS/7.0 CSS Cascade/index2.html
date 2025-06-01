@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cascade</title>  
+    <style>
+        /* Write your CSS code here */
+        /* css reset*/
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        html, body {
+            height: 100%;
+        }
+        .purple{
+            background-color: purple;
+            padding: 10px;
+
+        }
+        .blue{
+            background-color: blue;
+            padding: 10px;
+            color: yellow;
+        }
+        .red{
+            background-color: red;
+            padding: 10px;
+            color: white;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="purple">
+        <div class="blue">
+            <p>Yellow Text</p>
+            <div class="red">
+                <p>White Text</p>
+            </div>
+            <p>Yellow Text</p>
+            <div class="red">
+                <p>White Text</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
